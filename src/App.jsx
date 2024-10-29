@@ -62,6 +62,14 @@ function App() {
             date: '2023-04-05'  // Replace with your project date
         },
         {
+            title: 'Lapu-Lapu Machete and Shield Cinematic Clip Short Animation',
+            category: 'Sideline Project',
+            description: 'A sideline project creating a 3D model of Lapu-Lapu Machete and Shield, focusing on historical accuracy and detailed sculpting.',
+            imageUrl: ['https://i9.ytimg.com/vi_webp/aflzchCP8Yk/mq3.webp?sqp=CPidgrkG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgWShOMA8=&rs=AOn4CLDsQyc3bbXio-truhWUr3zX04Oj8g'],  // Replace with your image path
+            videoUrl: 'https://www.youtube.com/watch?v=aflzchCP8Yk',  // Replace with your video link
+            date: '2023-04-05'  // Replace with your project date
+        },
+        {
             title: 'GDSC 3D Blender Event',
             category: 'GDSC Event',
             description: 'As the host and designer of the poster, I organized an event to share skills in 3D modeling using Blender, aimed at enhancing members’ abilities in character and environment design.',

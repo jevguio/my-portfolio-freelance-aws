@@ -182,9 +182,9 @@ export default function MultiActionAreaCard({ imageUrl, videoUrl, title, Descrip
                         ) : (
                             <Chip label={category}
                                 color={
-                                    category == "Video Edit" ? 'primary' :
-                                        category == "Animation" ? 'success' :
-                                            category == "Website Development" ? 'warning' :
+                                    category == "Video Edit"||category == "GDSC Event" ? 'primary' :
+                                    category == "Animation"||category == "3D Modeling" ? 'success' :
+                                    category == "Web Development" || category == "Sideline Project" ? 'warning' :
                                                 category == "Photos" ? 'error' : ''
                                 }
                                 onClick={() => { }}
