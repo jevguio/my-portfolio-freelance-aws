@@ -114,15 +114,13 @@ export default function AboutMe({ sectionRefs }) {
             <Typography variant='h6' color='white' sx={{ textAlign: 'justify', pt: 5, width: '90%', m: 'auto'  }}>
 
 
-              Hi! I’m John Vincent S. Guioguio, a passionate and dedicated freelancer with a strong background in web development,
-              video editing, and animation.I have honed my skills by working on various projects, from creating responsive websites
-              to producing captivating animations.
-              I specialize in building professional and creative solutions that bring my clients' ideas to life. Whether it’s developing
-              dynamic web applications using Laravel and React.js, or creating visually engaging animations with Blender,
-              I strive to deliver work that exceeds expectations.
+            Hi! I’m John Vincent S. Guioguio, a passionate and dedicated freelancer with a strong background in web development, video editing, and animation. I have honed my skills by working on various projects, from creating responsive websites to producing captivating animations. I specialize in building professional and creative solutions that bring my clients' ideas to life.
 
-              I’m all about combining creativity with technical expertise to produce high-quality results. Each project I take on
-              is an opportunity for me to help businesses and individuals reach their goals through innovative solutions and effective storytelling.
+My expertise includes developing dynamic web applications using Laravel and React.js, where I focus on delivering user-friendly interfaces and robust backend functionality. I also leverage AWS for deploying applications and enhancing scalability, ensuring that my projects can grow with my clients' needs. Additionally, I have a solid grasp of Material UI, which allows me to enhance the user experience with aesthetically pleasing designs.
+
+In the realm of multimedia, I create visually engaging animations using Blender and edit high-quality videos with Adobe Premiere Pro and Adobe After Effects. My creative process is fueled by a deep understanding of storytelling, allowing me to effectively communicate messages through compelling visuals and narratives.
+
+I strive to deliver work that exceeds expectations, combining creativity with technical expertise to produce high-quality results. Each project I take on is an opportunity for me to help businesses and individuals reach their goals through innovative solutions and effective storytelling. You can view my code and projects on my GitHub and I am always eager to collaborate and explore new ideas, ensuring that my clients receive personalized service tailored to their unique needs.
             </Typography>
           </Grid2>
         </Grid2>
