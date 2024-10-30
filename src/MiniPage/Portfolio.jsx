@@ -32,10 +32,10 @@ function App({ sectionRefs,fetchPost,ItemList
     };
  
 // console.log('ItemList',ItemList);
-    useEffect(() => {
+    // useEffect(() => {
 
-        fetchPost();
-    }, [ItemList]); // Run effect when postId changes 
+    //     fetchPost();
+    // }, [ItemList]); // Run effect when postId changes 
     const handleSearchInputChange = (event) => {
 
         setSearchTerm(event.target.value);

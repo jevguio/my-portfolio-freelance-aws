@@ -7,6 +7,7 @@ import Portfolio from './MiniPage/Portfolio';
 import Services from './MiniPage/Services';
 import AboutMe from './MiniPage/AboutMe';
 import SendMailForms from './MiniPage/SendMailForms';
+import CV from './MiniPage/CV';
 import Upload from './MiniPage/Upload';
 
 import nezuko from './Images/upload/nezuko render.png';
@@ -18,6 +19,7 @@ import blender3d from './Images/upload/my blender 3D event.png';
 import Ai from './Images/upload/animation.png';
 import traditional from './Images/upload/traditional 3D event poster.png';
 import photoshop from './Images/upload/photoshop 3D event poster.png';
+import { Grid2 } from '@mui/material';
 function App() {
 
     const [ItemList, setItemList] = useState(
@@ -142,7 +144,15 @@ function App() {
             ></Portfolio>
             <Services sectionRefs={sectionRefs} />
             <AboutMe sectionRefs={sectionRefs} />
-            <SendMailForms sectionRefs={sectionRefs} />
+            <Grid2 container>
+                <Grid2 item size={6}>
+
+                    <SendMailForms sectionRefs={sectionRefs} /> 
+                </Grid2>
+                <Grid2 item size={6}> 
+                    <CV sectionRefs={sectionRefs} />
+                </Grid2>
+            </Grid2>
             <Footer sectionRefs={sectionRefs} />
 
         </>

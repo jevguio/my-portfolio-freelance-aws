@@ -16,7 +16,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn'; 
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Avatar, useMediaQuery } from '@mui/material';
-const pages = ['Home', 'Portfolio', 'Services', 'About', 'Contact'];
+const pages = ['Home', 'Portfolio', 'Services', 'About', 'Contact','Resume/CV'];
 const socialMed = [{
   toolTip: 'GitHub',
   icon: <GitHubIcon ></GitHubIcon>,
