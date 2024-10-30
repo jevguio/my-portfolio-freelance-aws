@@ -82,7 +82,7 @@ const ContactForm = ({sectionRefs}) => {
       ref={sectionRefs.current['Resume/CV']}>
       {/* Basic Info */}
       <Box mt={-2}>
-        <Typography variant="h4" component="h1" fontSize="17pt" lineHeight="28px" fontWeight="400">
+        <Typography variant="h4" component="h1" fontSize="17pt" lineHeight="28px" fontWeight="400" padding={0}>
           John Vincent Guioguio
         </Typography>
         <Typography variant="h6" component="h2" fontSize="9pt" color="text.primary" fontWeight="bold">
@@ -118,7 +118,7 @@ const ContactForm = ({sectionRefs}) => {
       </Box>
       <Box mt={2}>
         <Typography fontSize="10.5pt" fontWeight="bold">
-          Freelance Web Developer, Video Editor
+        Freelance Fullstack Developer, Video Editor, 3D Blender, & AWS
         </Typography>
         <Box display="inline-block" color="text.secondary">
           <Typography variant="body2" component="span" className="work_company" fontWeight="bold">
@@ -135,8 +135,8 @@ const ContactForm = ({sectionRefs}) => {
           June 2021 to Present
         </Typography>
         <Typography variant="body2" fontSize="9pt" mt={1}>
-          As a Freelance Web Developer, Video Editor, and Animator, I deliver high-quality digital services to clients, including:
-          <br /> • Developing responsive websites using Laravel, React.js, and Material UI.
+          As a Freelance Fullstack Developer, Video Editor, and 3D Blender, I deliver high-quality digital services to clients, including:
+          <br /> • Developing responsive websites using Laravel, React.js, AWS, and Material UI.
           <br /> • Editing and producing professional videos using Adobe Premiere Pro.
           <br /> • Offering a client-centric approach, ensuring projects meet budget and time requirements.
         </Typography>

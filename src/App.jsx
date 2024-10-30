@@ -19,7 +19,7 @@ import blender3d from './Images/upload/my blender 3D event.png';
 import Ai from './Images/upload/animation.png';
 import traditional from './Images/upload/traditional 3D event poster.png';
 import photoshop from './Images/upload/photoshop 3D event poster.png';
-import { Grid2 } from '@mui/material';
+import { Grid2, Typography } from '@mui/material';
 function App() {
 
     const [ItemList, setItemList] = useState(
@@ -147,9 +147,13 @@ function App() {
             <Grid2 container>
                 <Grid2 item size={6}>
 
-                    <SendMailForms sectionRefs={sectionRefs} /> 
+                    <SendMailForms sectionRefs={sectionRefs} />
                 </Grid2>
-                <Grid2 item size={6}> 
+                <Grid2 item size={6}>
+
+                    <Typography variant="h4" fontFamily={'Qualy Bold'} textAlign={'center'} component="div"   lineHeight="28px" fontWeight="400" sx={{ pt: 4, pb: 0, px: 4 }}>
+                        Resume
+                    </Typography>
                     <CV sectionRefs={sectionRefs} />
                 </Grid2>
             </Grid2>
