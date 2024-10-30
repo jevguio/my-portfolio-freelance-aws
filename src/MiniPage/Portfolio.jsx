@@ -17,7 +17,7 @@ const date_options = [
     'Last Year'
 ];
 
-const category_options = ['All', 'Video Edit', 'Animation', 'Website Development', 'Photos'];
+const category_options = ['All', 'Animation','3D Modeling','GDSC Event', 'Web Development'];
 function App({ sectionRefs,fetchPost,ItemList
 
 }) {
