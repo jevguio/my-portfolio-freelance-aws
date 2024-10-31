@@ -14,6 +14,8 @@ import nezuko from './Images/upload/nezuko render.png';
 import Zenitsu from './Images/upload/zenetsu.png';
 import Gojo from './Images/upload/gojo render.png';
 import web from './Images/upload/web.png';
+import lapu1 from './Images/upload/lapulapu1.webp';
+import mq2 from './Images/upload/mq2.webp';
 
 import blender3d from './Images/upload/my blender 3D event.png';
 import Ai from './Images/upload/animation.png';
@@ -59,15 +61,15 @@ function App() {
             title: 'Lapu-Lapu 3D Character',
             category: 'Animation',
             description: 'A sideline project creating a 3D model of Lapu-Lapu, focusing on historical accuracy and detailed sculpting.',
-            imageUrl: ['https://i9.ytimg.com/vi_webp/wfNkEZ12CpE/mq3.webp?sqp=CPidgrkG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLBqlRK9ai7igTajbP94Y17dNKBacw'],  // Replace with your image path
+            imageUrl: [lapu1],  // Replace with your image path
             videoUrl: 'https://www.youtube.com/watch?v=wfNkEZ12CpE',  // Replace with your video link
             date: '2023-04-05'  // Replace with your project date
         },
         {
-            title: 'Lapu-Lapu Machete and Shield Cinematic Clip Short Animation',
+            title: 'Lapu-Lapu Machete and Shield',
             category: 'Animation',
             description: 'A sideline project creating a 3D model of Lapu-Lapu Machete and Shield, focusing on historical accuracy and detailed sculpting.',
-            imageUrl: ['https://i9.ytimg.com/vi_webp/aflzchCP8Yk/mq3.webp?sqp=CPidgrkG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgWShOMA8=&rs=AOn4CLDsQyc3bbXio-truhWUr3zX04Oj8g'],  // Replace with your image path
+            imageUrl: [mq2],  // Replace with your image path
             videoUrl: 'https://www.youtube.com/watch?v=aflzchCP8Yk',  // Replace with your video link
             date: '2023-04-05'  // Replace with your project date
         },
