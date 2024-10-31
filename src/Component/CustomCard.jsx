@@ -173,7 +173,9 @@ export default function MultiActionAreaCard({ imageUrl, videoUrl, title, Descrip
                         />
                     )
                     }
-                    <CardContent>
+                    <CardContent sx={{
+                        minHeight:'13em'
+                    }}>
 
                         {loading ? (
                             <React.Fragment>
@@ -197,11 +199,18 @@ export default function MultiActionAreaCard({ imageUrl, videoUrl, title, Descrip
                                 <Skeleton animation="wave" height={10} style={{ marginBottom: 6 }} />
                             </React.Fragment>
                         ) : (
-                            <Typography gutterBottom variant="h5" component="div">
+                            <Typography gutterBottom variant="h5" component="div" 
+                            sx={{
+                                color: 'text.secondary',
+                                display: '-webkit-box',
+                                WebkitLineClamp: 2, // Limit to 3 lines
+                                WebkitBoxOrient: 'vertical',
+                                overflow: 'hidden',
+                                textOverflow: 'ellipsis',
+                            }}>
                                 {title}
                             </Typography>
-                        )}
-
+                        )} 
                         {loading ? (
                             <React.Fragment>
                                 <Skeleton animation="wave" height={10} style={{ marginBottom: 6 }} />
@@ -217,7 +226,7 @@ export default function MultiActionAreaCard({ imageUrl, videoUrl, title, Descrip
                                         WebkitLineClamp: 3, // Limit to 3 lines
                                         WebkitBoxOrient: 'vertical',
                                         overflow: 'hidden',
-                                        textOverflow: 'ellipsis',
+                                        textOverflow: 'ellipsis', 
                                     }}>
                                     {Description}
                                 </Typography>
@@ -237,7 +246,7 @@ export default function MultiActionAreaCard({ imageUrl, videoUrl, title, Descrip
                 <Divider>
 
                 </Divider>
-                <CardActions sx={{ width: 'full' }}>
+                <CardActions sx={{ width: 'full', minHeight:'3em'}}>
 
 
                     {loading ? (
