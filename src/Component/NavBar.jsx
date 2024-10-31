@@ -16,7 +16,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn'; 
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Avatar, useMediaQuery } from '@mui/material';
-const pages = ['Home', 'Portfolio', 'Services', 'About', 'Contact','Resume/CV'];
 const socialMed = [{
   toolTip: 'GitHub',
   icon: <GitHubIcon ></GitHubIcon>,
@@ -36,29 +35,41 @@ const socialMed = [{
   url: 'https://www.linkedin.com/in/john-vincent-guioguio-21a5201b6'
 },
 ];
-function ResponsiveAppBar({ sectionRefs }) {
+function ResponsiveAppBar({ sectionRefs,pages }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  
 
-
+  const menuRef = React.useRef(null);
 
   const icon = document.getElementById('icon');
   icon.href=logo;
   const title = document.getElementById('title');
   title.innerText='Jev Guio - Portfolio';
   // Create refs for each section
-  pages.forEach((page) => {
-    sectionRefs.current[page] = React.createRef();
-  });
-
+  
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
+  };
+  const handleCloseNavMenu = (event) => {
+    setAnchorElNav(null);
   };
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
 
+  React.useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        handleCloseNavMenu();
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [menuRef]);
+
+  
 
   const handleOpenUrl = (url) => {
     window.open(url, '_blank');
@@ -129,6 +140,8 @@ function ResponsiveAppBar({ sectionRefs }) {
                 vertical: 'bottom',
                 horizontal: 'left',
               }}
+              onClose={handleCloseNavMenu}
+              ref={menuRef}
               keepMounted
               transformOrigin={{
                 vertical: 'top',

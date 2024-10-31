@@ -7,7 +7,8 @@ import {
   TextField,
   Typography,
   Box,
-  Alert
+  Alert,
+  useMediaQuery
 } from '@mui/material';
 
 const ContactForm = ({sectionRefs}) => {

@@ -7,7 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import bg1 from '../Images/background3.png';
 const App = ({ sectionRefs }) => {
 
-    const pages = ['Home', 'Portfolio', 'Services', 'About', 'Contact'];
+    const pages = ['Home', 'Portfolio', 'Services', 'About', 'Contact','Resume/CV'];
     const socialMed = [{
         toolTip: 'GitHub',
         icon: <GitHubIcon ></GitHubIcon>,
@@ -28,6 +28,7 @@ const App = ({ sectionRefs }) => {
     },
     ];
 
+       
     const SetFocus = (target) => {
         if (target === "posts") {
             // Add any specific logic for "posts" here if necessary
