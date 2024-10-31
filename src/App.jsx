@@ -19,7 +19,7 @@ import blender3d from './Images/upload/my blender 3D event.png';
 import Ai from './Images/upload/animation.png';
 import traditional from './Images/upload/traditional 3D event poster.png';
 import photoshop from './Images/upload/photoshop 3D event poster.png';
-import { Grid2, Typography, useMediaQuery } from '@mui/material';
+import { Divider, Grid2, Typography, useMediaQuery } from '@mui/material';
 function App() {
 
     const [ItemList, setItemList] = useState(
@@ -106,7 +106,7 @@ function App() {
         ]
     );
 
-    const pages = ['Home', 'Portfolio', 'Services', 'About', 'Contact','Resume/CV'];
+    const pages = ['Home', 'Portfolio', 'Services', 'About', 'Contact', 'Resume/CV'];
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -135,13 +135,13 @@ function App() {
 
     pages.forEach((page) => {
         sectionRefs.current[page] = React.createRef();
-      });
-      
+    });
+
     const matches = useMediaQuery('(max-width:800px)');
 
     return (
         <>
-            <NavBar sectionRefs={sectionRefs} pages={pages}/>
+            <NavBar sectionRefs={sectionRefs} pages={pages} />
             <Profile sectionRefs={sectionRefs} />
             <Portfolio
                 fetchPost={fetchPost}
@@ -150,16 +150,15 @@ function App() {
             ></Portfolio>
             <Services sectionRefs={sectionRefs} />
             <AboutMe sectionRefs={sectionRefs} />
-            <Grid2 container  justifyContent={'center'} alignContent={'center'}>
-                <Grid2  size={matches?11:6}>
+            <Grid2 container justifyContent={'center'} alignContent={'center'} >
+                <Grid2 size={matches ? 11 : 6}>
 
                     <SendMailForms sectionRefs={sectionRefs} />
                 </Grid2>
-                <Grid2  size={matches?11:6}>
-
-                    <Typography variant="h4" fontFamily={'Qualy Bold'} textAlign={'center'} component="div"   lineHeight="28px" fontWeight="400" sx={{ pt: 4, pb: 0, px: 4 }}>
-                        Resume
-                    </Typography>
+                <Grid2 size={matches ? 12 : 12} sx={{
+                backgroundColor: '#f0f0f0', // Changed to white for contrast
+            }}>
+                    <Divider></Divider>
                     <CV sectionRefs={sectionRefs} />
                 </Grid2>
             </Grid2>

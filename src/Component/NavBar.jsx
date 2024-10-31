@@ -97,10 +97,29 @@ function ResponsiveAppBar({ sectionRefs,pages }) {
       });
     }
   };
+  const [showAppBar, setShowAppBar] = React.useState(true);
+  const [lastScrollY, setLastScrollY] = React.useState(0);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > lastScrollY) {
+      setShowAppBar(false); // Hide AppBar on scroll down
+    } else {
+      setShowAppBar(true);  // Show AppBar on scroll up
+    }
+    setLastScrollY(currentScrollY);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
 
   const matches = useMediaQuery('(max-width:600px)'); 
   return (
-    <AppBar position="sticky" sx={{ backgroundColor: '#011222' }}>
+    <AppBar position="sticky" sx={{ backgroundColor: '#011222' , transform: showAppBar ? 'translateY(0)' : 'translateY(-100%)', transition: 'transform 0.3s ease-in-out'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Avatar alt='Jev Guio' sizes='large' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, width: 60, height: 50 }} src={logo}></Avatar>
