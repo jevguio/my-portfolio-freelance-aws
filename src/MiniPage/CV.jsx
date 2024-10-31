@@ -9,10 +9,15 @@ import {
   Box,
   Alert,
   useMediaQuery,
-  List,
-  ListItem,
-  ListItemText
+  Divider
 } from '@mui/material';
+import PersonIcon from '@mui/icons-material/Person';
+import SchoolIcon from '@mui/icons-material/School';
+import WorkIcon from '@mui/icons-material/Work';
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+
+import CustomizedRating from '../Component/StyleRating';
 
 const ContactForm = ({ sectionRefs }) => {
   const [formData, setFormData] = useState({
@@ -55,15 +60,43 @@ const ContactForm = ({ sectionRefs }) => {
     "Freelance Developer – Providing website development, video editing services",
   ];
   const Skills = [
-    "Adobe Premiere (3 years)",
-    "Adobe After Effects (2 years)",
-    "React (2 years)",
-    "PHP (2 years)",
-    "MySQL (2 years)",
-    "C# (3 years)",
-    "Unity (4 years)",
-    "AWS (1 year)",
-    "Blender (4 years)",
+    {
+      label: "Adobe Premiere (3 years)",
+      rate: 4.4
+    },
+    {
+      label: "Adobe After Effects (2 years)",
+      rate: 4.1
+    },
+    {
+      label: "React (2 years)",
+      rate: 4.8
+    },
+    {
+      label: "PHP (2 years)",
+      rate: 4.2
+
+    },
+    {
+      label: "MySQL (2 years)",
+      rate: 4.0
+    },
+    {
+      label: "C# (3 years)",
+      rate: 4.6
+    },
+    {
+      label: "Unity (4 years)",
+      rate: 4.8
+    },
+    {
+      label: "AWS (1 year)",
+      rate: 4.1
+    },
+    {
+      label: "Blender (4 years)",
+      rate: 4.4
+    },
   ];
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
@@ -131,10 +164,10 @@ const ContactForm = ({ sectionRefs }) => {
 
         ref={sectionRefs.current['Resume/CV']}
         sx={{ maxWidth: 600, margin: 'auto', my: 5, boxShadow: 3 }}>
-        <Box p={4} bgcolor="white" fontSize="16px"
+        <Box p={6} bgcolor="white" fontSize="16px"
           ref={sectionRefs.current['Resume/CV']}>
           {/* Basic Info */}
-          <Box mt={-2}>
+          <Box >
             <Typography variant="h4" component="h1" fontSize="17pt" lineHeight="28px" fontWeight="400" padding={0}>
               John Vincent Guioguio
             </Typography>
@@ -143,17 +176,22 @@ const ContactForm = ({ sectionRefs }) => {
             </Typography>
             <Box display="block" mb={2}>
               <Typography variant="body2" component="div" display="inline" className="locality">
-                Panglao
+                Panglao, Bohol
               </Typography>
             </Box>
-            <Typography variant="body2" mt={2} mb={2}>
+            <Typography variant="body2" mt={2} mb={2} textAlign={"justify"}>
               An innovative and dedicated IT graduate specializing in web development and video editing. With expertise in technologies such as Laravel, React.js, and Material UI, I bring creative solutions to life through freelance work. I am committed to delivering high-quality projects that meet client needs. My skills in both software development and multimedia production enable me to offer a versatile service range to clients across different industries.
             </Typography>
           </Box>
 
           {/* Personal Details */}
           <Box mt={3} borderBottom="1px solid #ccc" pb={1} mb={2}>
-            <Typography variant="h6" fontSize="12pt">
+            <Typography variant="h6" fontSize="12pt" color="text.secondary" fontWeight={'bold'} sx={{
+              display: 'flex', // Use flex to align icon and text properly
+              alignItems: 'center', // Center align items vertically 
+              color: '#011222',
+            }}>
+              <PersonIcon sx={{ pr: 2, py: 0, m: 0, }}></PersonIcon>
               Personal Details
             </Typography>
           </Box>
@@ -165,51 +203,71 @@ const ContactForm = ({ sectionRefs }) => {
 
           {/* Work Experience */}
           <Box mt={3} borderBottom="1px solid #ccc" pb={1} mb={2}>
-            <Typography variant="h6" fontSize="12pt">
+            <Typography variant="h6" fontSize="12pt" color="text.secondary" fontWeight={'bold'} sx={{
+              display: 'flex', // Use flex to align icon and text properly
+              alignItems: 'center', // Center align items vertically 
+              color: '#011222',
+            }}>
+              <WorkIcon sx={{ pr: 2, py: 0, m: 0, }}></WorkIcon>
               Work Experience
             </Typography>
           </Box>
           <Box mt={2}>
-            <Typography fontSize="10.5pt" fontWeight="bold">
+            <Typography fontSize={'medium'} fontWeight="bolder">
               Freelance Fullstack Developer, Video Editor, 3D Blender, & AWS
             </Typography>
-            <Box display="inline-block" color="text.secondary">
+            <Box display="inline-block" >
               <Typography variant="body2" component="span" className="work_company" fontWeight="bold">
-                Self Employed
-              </Typography>
-              <Typography variant="body2" component="span" className="inline-block" style={{ paddingLeft: 5, paddingRight: 5 }}>
-                -
-              </Typography>
-              <Typography variant="body2" component="span" className="inline-block">
-                Panglao
+                Self Employed -
+                Panglao, Bohol
               </Typography>
             </Box>
-            <Typography variant="body2" color="text.secondary" mt={1}>
+            <Typography variant="body2" mt={1} sx={{
+              display: 'flex', // Use flex to align icon and text properly
+              alignItems: 'center', // Center align items vertically 
+              fontWeight: 'bold',
+              color: '#011222',
+            }}>
+              <CalendarMonthIcon sx={{ pr: 1, pl: 1, py: 0, m: 0, }}></CalendarMonthIcon>
               June 2021 to Present
             </Typography>
-            <Typography variant="body2" fontSize="9pt" mt={1}>
+            <Typography variant="body2" fontSize="9pt" mt={1} >
               As a Freelance Fullstack Developer, Video Editor, and 3D Blender, I deliver high-quality digital services to clients, including:
               <br /> • Developing responsive websites using Laravel, React.js, AWS, and Material UI.
               <br /> • Editing and producing professional videos using Adobe Premiere Pro.
               <br /> • Offering a client-centric approach, ensuring projects meet budget and time requirements.
             </Typography>
           </Box>
-          <Box mt={2}>
-            <Typography fontSize="10.5pt" fontWeight="bold">
+          <Box mt={4}>
+            <Typography fontSize="12pt" fontWeight="bold" sx={{
+              display: 'flex', // Use flex to align icon and text properly
+              color: '#011222',
+              alignItems: 'center', // Center align items vertically 
+            }}>
+              <SchoolIcon sx={{ pr: 2, py: 0, m: 0, }}></SchoolIcon>
               Education
             </Typography>
-            <Box display="inline-block" color="text.secondary">
-              <Typography variant="body2" component="span" className="work_company" fontWeight="bold">
+            <Divider sx={{
+              my: 2
+            }}></Divider>
+            <Box display="block" >
+              <Typography variant="body2" component="div" className="work_company" fontSize={'medium'} fontWeight="bolder">
                 Bachelor's Degree in BS in Information Technology
               </Typography>
-              <Typography variant="body2" component="span" className="inline-block" style={{ paddingLeft: 5, paddingRight: 5 }}>
-                Cristal e-College Bohol - Panglao
+              <Typography variant="body2" component="div" fontWeight={'bold'} >
+                Cristal e-College Bohol - Tawala, Panglao, Bohol
               </Typography>
-              <Typography variant="body2" component="span" className="inline-block">
+              <Typography variant="body2" component="div" sx={{
+                display: 'flex', // Use flex to align icon and text properly
+                color: '#011222',
+                alignItems: 'center', // Center align items vertically 
+                fontWeight: 'bold',
+              }}>
+                <CalendarMonthIcon sx={{ pr: 1, pl: 1, py: 0, m: 0, }}></CalendarMonthIcon>
                 June 2019 to May 2024
               </Typography>
             </Box>
-            <Typography variant="body2" color="text.secondary" mt={2}>
+            <Typography variant="body2" mt={2} fontWeight="bold">
               Relevant Projects:
             </Typography>
 
@@ -224,7 +282,10 @@ const ContactForm = ({ sectionRefs }) => {
                 </li>
               ))}
             </ul>
-            <Typography variant="body2" color="text.secondary" mt={2}>
+            <Typography variant="body2" mt={2} fontWeight="bold" sx={{
+              display: 'flex', // Use flex to align icon and text properly
+              alignItems: 'center', // Center align items vertically 
+            }}>
               Achievements:
             </Typography>
             <ul>
@@ -240,7 +301,7 @@ const ContactForm = ({ sectionRefs }) => {
                 </li>
               ))}
             </ul>
-            <Typography variant="body2" color="text.secondary" mt={2} >
+            <Typography variant="body2" mt={2} fontWeight="bold">
               Affiliations:
             </Typography>
             <ul>
@@ -256,22 +317,24 @@ const ContactForm = ({ sectionRefs }) => {
                 </li>
               ))}
             </ul>
-            <Typography variant="body2" color="text.secondary" mt={2} >
+            <Typography variant="body2" mt={2} fontWeight="bold">
               Skills:
             </Typography>
-            <ul>
+            <Box>
 
-              {Skills.map((achievement, index) => (
-                <li key={index}>
+              {Skills.map((val, index) => (
+                <CustomizedRating
+                  key={index}
+                  icon={<Box sx={{ border: 'solid #011222 1px', backgroundColor: '#011222', width: '4em', height: '.5em', m: 0.1, display: 'block' }}></Box>}
+                  emptyIcon={<Box sx={{ border: 'solid #011222 1px', width: '4em', height: '.5em', display: 'block', m: 0.1 }}></Box>}
+                  label={val.label}
+                  value={val.rate}
+                  max={5}
+                  precision={0.1}
+                />
 
-                  <Typography variant="body2" sx={{
-                    p: 0, m: 0, textDecoration: 'dot'
-                  }} >
-                    {achievement}
-                  </Typography>
-                </li>
               ))}
-            </ul>
+            </Box>
           </Box>
         </Box>
       </Card>
