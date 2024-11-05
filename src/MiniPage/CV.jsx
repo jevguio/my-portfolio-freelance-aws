@@ -49,15 +49,15 @@ const ContactForm = ({ sectionRefs }) => {
   ];
 
   const achievements = [
-    "Programmer of the Year – ITMAWD, April 2020 (STI)",
-    "Best in Research – ITMAWD, 2020 (STI)",
-    "Tagisan ng Talino Codefest Champion (STI-Local Level) – 2020",
-    "Tagisan ng Sining Champion (STI-Local Level) – 2020",
+    "Awarded Programmer of the Year – ITMAWD, April 2020 (STI)",
+    "Recognized for Best Research – ITMAWD, 2020 (STI)",
+    "Champion, Tagisan ng Talino Codefest (STI Local Level) – 2020",
+    "Champion, Tagisan ng Sining (STI Local Level) – 2020",
     "Best in Mobile Application – 2019 (STI)",
-    "STI National Codefest (2018) – 2nd Place nationally",
-    "Successfully completed the Bandit wargame challenges",
-    "Implemented complex hardware-software integrations using Arduino, RFID readers, and networking modules",
-  ];
+    "2nd Place, STI National Codefest – 2018",
+    "Completed all levels of the Bandit wargame challenges",
+    "Executed advanced hardware-software integrations with Arduino, RFID readers, and networking modules",
+];
 
   const affiliations = [
     <>
