@@ -14,99 +14,144 @@ import nezuko from './Images/upload/nezuko render.png';
 import Zenitsu from './Images/upload/zenetsu.png';
 import Gojo from './Images/upload/gojo render.png';
 import web from './Images/upload/web.png';
+import pms from './Images/upload/pms.png';
+import fb from './Images/upload/fb.png';
+import fb2 from './Images/upload/fb2.png';
+import fb3 from './Images/upload/fb3.png';
+import fb4 from './Images/upload/fb4.png';
+import fb5 from './Images/upload/fb5.png';
 import lapu1 from './Images/upload/lapulapu1.webp';
 import mq2 from './Images/upload/mq2.webp';
+import mq3 from './Images/upload/mq3.webp';
+import mq4 from './Images/upload/teacherDay.png';
 
 import blender3d from './Images/upload/my blender 3D event.png';
 import Ai from './Images/upload/animation.png';
 import traditional from './Images/upload/traditional 3D event poster.png';
 import photoshop from './Images/upload/photoshop 3D event poster.png';
-import { Divider, Grid2, Typography, useMediaQuery } from '@mui/material';
+import { Divider, Grid2, IconButton, Link, Typography, useMediaQuery } from '@mui/material';
+
+import GitHubIcon from '@mui/icons-material/GitHub';
 function App() {
 
     const [ItemList, setItemList] = useState(
-        [{
-            title: 'Nezuko 3D Character',
-            category: '3D Modeling',
-            description: 'A personal project showcasing a 3D model of Nezuko from Demon Slayer, focusing on character design and texturing.',
-            imageUrl: [nezuko],  // Replace with your image path
-            videoUrl: '',  // Replace with your video link
-            date: '2021-01-15'  // Replace with your project date
+        [
+        {
+            title: 'Pertinacity - Hypbest (STI Bohol) - 2020',
+            category: 'Video Edit',
+            description: 'Served as cinematographer and editor for a school competition video. Responsibilities included planning shots, filming, and editing, resulting in a polished final video that effectively conveyed the theme and engaged the audience.',
+            imageUrl: [mq3], 
+            videoUrl: 'https://www.youtube.com/watch?v=QoeqJrhFhck',  
+            date: '2020-08-10'  
         },
         {
-            title: 'Zenitsu 3D Character',
-            category: '3D Modeling',
-            description: 'A personal project featuring a 3D model of Zenitsu from Demon Slayer, emphasizing dynamic poses and rigging.',
-            imageUrl: [Zenitsu],  // Replace with your image path
-            videoUrl: '',  // Replace with your video link
-            date: '2022-02-20'  // Replace with your project date
+            title: 'Cristal-e College Teachers Day 2022',
+            category: 'Video Edit',
+            description: 'Coordinated with a team to create a Same Day Edit (SDE) for Teachers Day. Responsibilities included designing a 3D logo and overseeing videography/editing, resulting in a memorable video celebrating the event’s highlights.',
+            imageUrl: [mq4], 
+            videoUrl: 'https://www.youtube.com/watch?v=rAYvgJlimjA',  
+            date: '2022-08-10'  
         },
         {
             title: 'Gojo 3D Character',
             category: '3D Modeling',
-            description: 'A personal project highlighting a 3D model of Gojo from Jujutsu Kaisen, showcasing advanced shading techniques.',
-            imageUrl: [Gojo],  // Replace with your image path
-            videoUrl: '',  // Replace with your video link
-            date: '2022-08-10'  // Replace with your project date
+            description: 'Produced a high-quality 3D model of Gojo from Jujutsu Kaisen. Responsibilities included character sculpting and shading, using advanced techniques to achieve a realistic look, especially in Gojo’s facial features and attire.',
+            imageUrl: [Gojo], 
+            videoUrl: '',  
+            date: '2022-08-10'  
         },
         {
             title: 'Portfolio Website',
             category: 'Web Development',
-            description: 'This portfolio website showcases my skills and projects, built using AWS for hosting and scalability.',
-            imageUrl: [web],  // Replace with your image path
-            videoUrl: '',  // Replace with your video link
-            date: '2024-9-01'  // Replace with your project date
+            description: 'Developed a responsive portfolio website to showcase my skills and projects. Accomplishments include setting up AWS hosting, optimizing for scalability, and ensuring seamless user experience across devices.',
+            imageUrl: [web], 
+            videoUrl: '',  
+            date: '2024-9-01'  
         },
         {
-            title: 'Lapu-Lapu 3D Character',
-            category: 'Animation',
-            description: 'A sideline project creating a 3D model of Lapu-Lapu, focusing on historical accuracy and detailed sculpting.',
-            imageUrl: [lapu1],  // Replace with your image path
-            videoUrl: 'https://www.youtube.com/watch?v=wfNkEZ12CpE',  // Replace with your video link
-            date: '2023-04-05'  // Replace with your project date
+            title: 'Facebook Clone - School Work Challenge',
+            category: 'Web Development',
+            description: <>
+                <Typography>Built a replica of Facebook for a school project, with a focus on layout accuracy and UI design using React.js and Material UI. Responsibilities included implementing responsive design, functional components, and providing a live demo and GitHub repository.</Typography>
+                <Link href="https://jevguio.github.io/Facebook-clone-ReactJsXMaterial-UI/">View Live</Link>
+                <IconButton aria-label="Github" onClick={()=>{window.open("https://github.com/jevguio/Facebook-Clone-Challenge","_blank")}}>
+                   <GitHubIcon />
+                </IconButton>
+            </>,
+            imageUrl: [fb, fb2, fb3, fb4, fb5], 
+            videoUrl: '',  
+            date: '2023-9-01'  
+        },  
+        {
+            title: 'Purok Management System - (PMS)',
+            category: 'Application',
+            description: 'Developed a Windows-only C# application for community management as a freelance project for a local community. Features include admin and staff controls for secure member registration, event management, and attendance tracking with penalties for absences, designed to support transparent purok clearances.',
+            imageUrl: [pms], 
+            videoUrl: 'https://www.youtube.com/watch?v=OyTldTXuQSI',  
+            date: '2022-12-16'  
         },
         {
-            title: 'Lapu-Lapu Machete and Shield',
+            title: 'Nezuko 3D Character',
+            category: '3D Modeling',
+            description: 'Created a 3D model of Nezuko from Demon Slayer, focusing on character design and realistic texturing. Accomplishments include mastering character proportions and creating a detailed, visually appealing model that reflects Nezuko’s unique traits.',
+            imageUrl: [nezuko], 
+            videoUrl: '',  
+            date: '2021-01-15'  
+        },
+        {
+            title: 'Zenitsu 3D Character',
+            category: '3D Modeling',
+            description: 'Designed and rigged a 3D model of Zenitsu from Demon Slayer. Achievements include developing dynamic poses and utilizing advanced rigging techniques to capture the character’s energy and personality.',
+            imageUrl: [Zenitsu], 
+            videoUrl: '',  
+            date: '2022-02-20'  
+        },
+        {
+            title: 'Buwan ng Wika Event',
             category: 'Animation',
-            description: 'A sideline project creating a 3D model of Lapu-Lapu Machete and Shield, focusing on historical accuracy and detailed sculpting.',
-            imageUrl: [mq2],  // Replace with your image path
-            videoUrl: 'https://www.youtube.com/watch?v=aflzchCP8Yk',  // Replace with your video link
-            date: '2023-04-05'  // Replace with your project date
+            description: <>
+            <Typography>This project highlights high realism in weapon design, showcasing detailed craftsmanship to reflect authentic cultural artifacts. Additionally, I was responsible for editing the teaser video for Buwan ng Wika at my school, where I was hired as a freelance video editor for the event.</Typography>
+                <Link href="https://www.facebook.com/happyatLiberalArtsandEducation/videos/118364751351075/">Watch Full Video</Link>
+            </>,
+            imageUrl: [mq2], 
+            videoUrl: 'https://www.youtube.com/watch?v=aflzchCP8Yk',  
+            date: '2023-04-05'  
         },
         {
             title: 'GDSC 3D Blender Event',
             category: 'GDSC Event',
-            description: 'As the host and designer of the poster, I organized an event to share skills in 3D modeling using Blender, aimed at enhancing members’ abilities in character and environment design.',
-            imageUrl: [blender3d],  // Replace with your image path
-            videoUrl: '',  // Replace with your video link
-            date: '2024-06-15'  // Replace with your event date
+            description: 'Organized and hosted a 3D modeling event for GDSC, focusing on character and environment design in Blender. Responsibilities included poster design, event planning, and providing training to enhance participants’ 3D skills.',
+            imageUrl: [blender3d], 
+            videoUrl: '',  
+            date: '2024-06-15'  
         },
         {
             title: 'GDSC Adobe Photoshop Event',
             category: 'GDSC Event',
-            description: 'As the designer of the poster, I contributed to a skills-sharing event focused on Photoshop techniques, helping members enhance their digital art and design capabilities.',
-            imageUrl: [photoshop],  // Replace with your image path
-            videoUrl: '',  // Replace with your video link
-            date: '2024-07-20'  // Replace with your event date
+            description: 'Designed event materials for a Photoshop skills workshop, where I shared tips and guided members in mastering digital art techniques, enhancing overall design abilities within the community.',
+            imageUrl: [photoshop], 
+            videoUrl: '',  
+            date: '2024-07-20'  
         },
         {
             title: 'GDSC Traditional Drawing Event',
             category: 'GDSC Event',
-            description: 'As the designer of the poster, I helped organize an event that encourages members to share and improve their traditional drawing skills, fostering a creative community.',
-            imageUrl: [traditional],  // Replace with your image path
-            videoUrl: '',  // Replace with your video link
-            date: '2024-08-10'  // Replace with your event date
+            description: 'Contributed to organizing a traditional drawing workshop, where I encouraged members to share and improve their skills. Designed promotional materials, fostering a creative environment for artistic growth.',
+            imageUrl: [traditional], 
+            videoUrl: '',  
+            date: '2024-08-10'  
         },
         {
             title: 'GDSC Line Art Event',
             category: 'GDSC Event',
-            description: 'As the designer of the poster, I participated in a workshop dedicated to honing line art techniques, providing members with valuable tips and feedback on their artwork.',
-            imageUrl: [Ai],  // Replace with your image path
-            videoUrl: '',  // Replace with your video link
-            date: '2024-09-05'  // Replace with your event date
+            description: 'Played an active role in a line art workshop, where I provided feedback and design guidance to participants, enhancing their artistic skills and contributing to a supportive community atmosphere.',
+            imageUrl: [Ai], 
+            videoUrl: '',  
+            date: '2024-09-05' 
         }
         ]
     );
+    
 
     const pages = ['Home', 'Portfolio', 'Services', 'About', 'Contact', 'Resume/CV'];
     const [loading, setLoading] = useState(true);
@@ -158,10 +203,9 @@ function App() {
                     <SendMailForms sectionRefs={sectionRefs} />
                 </Grid2>
                 <Grid2 size={matches ? 12 : 12} sx={{
-                backgroundColor: '#f0f0f0', // Changed to white for contrast
-            }}>
+                    backgroundColor: '#f0f0f0', // Changed to white for contrast
+                }}>
                     <Divider></Divider>
-                    <CV sectionRefs={sectionRefs} />
                 </Grid2>
             </Grid2>
             <Footer sectionRefs={sectionRefs} />

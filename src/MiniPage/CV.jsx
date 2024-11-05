@@ -27,20 +27,24 @@ const ContactForm = ({ sectionRefs }) => {
   });
   const projects = [
     {
-      title: "Vendetta (Midterm Project)",
-      description: "Action film script set on a school campus, featuring advanced character development and a hidden room element.",
+      title: "Pertinacity - Hypbest (STI Bohol) - 2020",
+      description: "Served as cinematographer and editor for a school competition video. Responsibilities included planning shots, filming, and editing, resulting in a polished final video that effectively conveyed the theme and engaged the audience.",
     },
     {
       title: "Portfolio Website",
       description: "Built a freelance portfolio showcasing skills in video editing, website development (Laravel, React.js, Material UI), and AWS for hosting and scalable deployment.",
     },
     {
-      title: "Arduino-RFID Attendance System",
-      description: "Integrated W5500 Ethernet module with Arduino Uno for real-time RFID data tracking and logging into a Laravel-based system.",
+      title: "Facebook Clone - School Work Challenge",
+      description: "Built a replica of Facebook for a school project, with a focus on layout accuracy and UI design using React.js and Material UI. Responsibilities included implementing responsive design, functional components",
     },
     {
-      title: "School Management Database",
-      description: "Developed a database system for managing school operations, including student and teacher records, login backlogs, and content uploads.",
+      title: "Buwan ng Wika Event",
+      description: "This project highlights high realism in weapon design, showcasing detailed craftsmanship to reflect authentic cultural artifacts. Additionally, I was responsible for editing the teaser video for Buwan ng Wika at my school, where I was hired as a freelance video editor for the event.",
+    },
+    {
+      title: "Purok Management System - (PMS)",
+      description: "Freelance Windows application in C# for community management, with admin and staff controls for secure member registration, event management, and attendance tracking with penalties.",
     },
   ];
 
@@ -56,8 +60,16 @@ const ContactForm = ({ sectionRefs }) => {
   ];
 
   const affiliations = [
-    "Google Developer Student Clubs (GDSC) - Leadership roles in programming and creative content",
-    "Freelance Developer – Providing website development, video editing services",
+    <>
+    <Typography fontWeight={'bold'}>Google Developer Student Clubs - Cristal-e College (GDSC-CeC)</Typography>
+    <Typography> - 1st Senior Programmer (2022-2023)</Typography> 
+    <Typography> - Creative Leader (2023-2024)</Typography>
+    </>, 
+    <>
+    <Typography fontWeight={'bold'}>Freelance Developer </Typography>
+    <Typography> – website development, </Typography> 
+    <Typography> - video editing</Typography> 
+    </>,
   ];
   const Skills = [
     {
@@ -91,7 +103,7 @@ const ContactForm = ({ sectionRefs }) => {
     },
     {
       label: "AWS (1 year)",
-      rate: 4.1
+      rate: 3.93
     },
     {
       label: "Blender (4 years)",
@@ -157,21 +169,21 @@ const ContactForm = ({ sectionRefs }) => {
   return (
     <>
 
-      <Typography variant="h4" fontFamily={'Qualy Bold'} textAlign={'center'} component="div" lineHeight="28px" fontWeight="400" sx={{ pt: 4, pb: 0, px: 4 }}>
+      {/* <Typography variant="h4" fontFamily={'Qualy Bold'} textAlign={'center'} component="div" lineHeight="28px" fontWeight="400" sx={{ pt: 4, pb: 0, px: 4 }}>
         Resume
-      </Typography>
+      </Typography> */}
       <Card
 
         ref={sectionRefs.current['Resume/CV']}
-        sx={{ maxWidth: 600, margin: 'auto', my: 5, boxShadow: 3 }}>
-        <Box p={6} bgcolor="white" fontSize="16px"
+        sx={{ maxWidth: 650, mx: 'auto', my: 0, boxShadow: 'none' }}>
+        <Box px={6} py={2} bgcolor="white" fontSize="16px"
           ref={sectionRefs.current['Resume/CV']}>
           {/* Basic Info */}
           <Box >
-            <Typography variant="h4" component="h1" fontSize="17pt" lineHeight="28px" fontWeight="400" padding={0}>
+            {/* <Typography variant="h4" component="h1" fontSize="17pt" lineHeight="28px" fontWeight="400" padding={0}>
               John Vincent Guioguio
-            </Typography>
-            <Typography variant="h6" component="h2" fontSize="9pt" color="text.primary" fontWeight="bold">
+            </Typography> */}
+            <Typography variant="h6" component="h2" fontSize="12pt" color="text.primary" fontWeight="bold">
               Full-Stack Developer | Web Development, Video Editing, 3D Blender, & AWS
             </Typography>
             <Box display="block" mb={2}>
@@ -179,7 +191,7 @@ const ContactForm = ({ sectionRefs }) => {
                 Panglao, Bohol
               </Typography>
             </Box>
-            <Typography variant="body2" mt={2} mb={2} textAlign={"justify"}>
+            <Typography variant="body2" mt={2} mb={2} fontSize={'12pt'} textAlign={"justify"}>
               An innovative and dedicated IT graduate specializing in web development and video editing. With expertise in technologies such as Laravel, React.js, and Material UI, I bring creative solutions to life through freelance work. I am committed to delivering high-quality projects that meet client needs. My skills in both software development and multimedia production enable me to offer a versatile service range to clients across different industries.
             </Typography>
           </Box>
@@ -231,7 +243,7 @@ const ContactForm = ({ sectionRefs }) => {
               <CalendarMonthIcon sx={{ pr: 1, pl: 1, py: 0, m: 0, }}></CalendarMonthIcon>
               June 2021 to Present
             </Typography>
-            <Typography variant="body2" fontSize="9pt" mt={1} >
+            <Typography variant="body2" fontSize="12pt" mt={1} >
               As a Freelance Fullstack Developer, Video Editor, and 3D Blender, I deliver high-quality digital services to clients, including:
               <br /> • Developing responsive websites using Laravel, React.js, AWS, and Material UI.
               <br /> • Editing and producing professional videos using Adobe Premiere Pro.
@@ -261,7 +273,7 @@ const ContactForm = ({ sectionRefs }) => {
                 display: 'flex', // Use flex to align icon and text properly
                 color: '#011222',
                 alignItems: 'center', // Center align items vertically 
-                fontWeight: 'bold',
+                fontWeight: 'bold', 
               }}>
                 <CalendarMonthIcon sx={{ pr: 1, pl: 1, py: 0, m: 0, }}></CalendarMonthIcon>
                 June 2019 to May 2024
@@ -276,7 +288,7 @@ const ContactForm = ({ sectionRefs }) => {
 
                 <li key={index}>
 
-                  <Typography variant="body2" fontSize="9pt" mt={1}>
+                  <Typography variant="body2" fontSize="12pt" mt={1}>
                     <b>{project.title}</b> - {project.description}
                   </Typography>
                 </li>
@@ -293,7 +305,7 @@ const ContactForm = ({ sectionRefs }) => {
               {achievements.map((achievement, index) => (
                 <li key={index}>
 
-                  <Typography variant="body2" sx={{
+                  <Typography variant="body2" fontSize={'12pt'} sx={{
                     p: 0, m: 0, textDecoration: 'dot'
                   }} >
                     {achievement}
@@ -330,7 +342,7 @@ const ContactForm = ({ sectionRefs }) => {
                   label={val.label}
                   value={val.rate}
                   max={5}
-                  precision={0.1}
+                  precision={0.01}
                 />
 
               ))}

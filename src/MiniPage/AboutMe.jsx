@@ -15,6 +15,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import CustomizedRating from '../Component/StyleRating';
 import SquareIcon from '@mui/icons-material/Square';
 import SquareOutlinedIcon from '@mui/icons-material/SquareOutlined';
+import CV from '../MiniPage/CV';
 export default function AboutMe({ sectionRefs }) {
 
   const socialMed = [{
@@ -117,7 +118,7 @@ export default function AboutMe({ sectionRefs }) {
         p: matches ? 5 : 10,
       }}>
       <Grid2 container spacing={0}>
-        <Grid2 size={matches ? 12 : 5} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'right' }}>
+        <Grid2 size={matches ? 12 : 6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'right', }}>
 
           <Card sx={{ width: '80%', m: 'auto' }}>
             <CardMedia
@@ -128,17 +129,10 @@ export default function AboutMe({ sectionRefs }) {
               alt="green iguana"
             />
             <CardContent>
-              <Typography gutterBottom variant="h4" component="div" textAlign={'center'}>
+              <Typography gutterBottom fontSize={'xx-large'} component="div" textAlign={'center'}>
                 John Vincent Guioguio
               </Typography>
-              <Typography size={'small'} textAlign={'center'} fontWeight={'bold'} sx={{ color: 'text.secondary', width: '80%', m: 'auto' }}>
-                Creator - Founder - Owner - Jev Guio
-              </Typography>
-              <Box sx={{
-                m: 'auto',
-                width: '80%'
-              }}>
-              </Box>
+              <CV sectionRefs={sectionRefs} />
             </CardContent>
             <CardActions>
 
@@ -156,20 +150,37 @@ export default function AboutMe({ sectionRefs }) {
             </CardActions>
           </Card>
         </Grid2>
-        <Grid2 size={matches ? 12 : 7}>
+        {matches ? "" :
+          <Grid2 size={0.5}>
+          </Grid2>
+        }
+        <Grid2 size={matches ? 12 : 5}>
           <Typography variant='h4' fontFamily={'Qualy Bold'} color='white' sx={{ textAlign: 'center', pt: 5, width: '90%', m: 'auto' }}>About Me (Freelance Journey)</Typography>
           <Typography variant='h6' color='white' sx={{ textAlign: 'justify', pt: 5, width: '90%', m: 'auto' }}>
 
 
             Hi! I’m John Vincent S. Guioguio, a passionate and dedicated freelancer with a strong background in web development, video editing, and animation. I have honed my skills by working on various projects, from creating responsive websites to producing captivating animations. I specialize in building professional and creative solutions that bring my clients' ideas to life.
 
+          </Typography>
+          <Typography variant='h6' color='white' sx={{ textAlign: 'justify', pt: 5, width: '90%', m: 'auto' }}>
+
+
             My expertise includes developing dynamic web applications using Laravel and React.js, where I focus on delivering user-friendly interfaces and robust backend functionality. I also leverage AWS for deploying applications and enhancing scalability, ensuring that my projects can grow with my clients' needs. Additionally, I have a solid grasp of Material UI, which allows me to enhance the user experience with aesthetically pleasing designs.
+          </Typography>
+          <Typography variant='h6' color='white' sx={{ textAlign: 'justify', pt: 5, width: '90%', m: 'auto' }}>
 
             In the realm of multimedia, I create visually engaging animations using Blender and edit high-quality videos with Adobe Premiere Pro and Adobe After Effects. My creative process is fueled by a deep understanding of storytelling, allowing me to effectively communicate messages through compelling visuals and narratives.
+          </Typography>
+          <Typography variant='h6' color='white' sx={{ textAlign: 'justify', pt: 5, width: '90%', m: 'auto' }}>
 
             I strive to deliver work that exceeds expectations, combining creativity with technical expertise to produce high-quality results. Each project I take on is an opportunity for me to help businesses and individuals reach their goals through innovative solutions and effective storytelling. You can view my code and projects on my GitHub and I am always eager to collaborate and explore new ideas, ensuring that my clients receive personalized service tailored to their unique needs.
           </Typography>
+
         </Grid2>
+        {matches ? "" :
+          <Grid2 size={0.5}>
+          </Grid2>
+        }
       </Grid2>
     </Box>
   );

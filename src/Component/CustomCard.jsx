@@ -150,7 +150,7 @@ export default function MultiActionAreaCard({ imageUrl, videoUrl, title, Descrip
                                     </React.Fragment>
                                 ) : (
                                     <Box sx={{ width: '90%', mx: 'auto' }}>
-                                        <ShareButtons title={title} description={Description}></ShareButtons>
+                                        {/* <ShareButtons title={title} description={Description}></ShareButtons> */}
                                     </Box>
                                 )}
                             </CardActions>
@@ -184,7 +184,7 @@ export default function MultiActionAreaCard({ imageUrl, videoUrl, title, Descrip
                         ) : (
                             <Chip label={category}
                                 color={
-                                    category == "Video Edit"||category == "GDSC Event" ? 'primary' :
+                                    category == "Video Edit"||category == "GDSC Event"||category == "Application" ? 'primary' :
                                     category == "Animation"||category == "3D Modeling" ? 'success' :
                                     category == "Web Development" || category == "Sideline Project" ? 'warning' :
                                                 category == "Photos" ? 'error' : ''
@@ -246,7 +246,7 @@ export default function MultiActionAreaCard({ imageUrl, videoUrl, title, Descrip
                 <Divider>
 
                 </Divider>
-                <CardActions sx={{ width: 'full', minHeight:'3em'}}>
+                {/* <CardActions sx={{ width: 'full', minHeight:'3em'}}>
 
 
                     {loading ? (
@@ -258,11 +258,14 @@ export default function MultiActionAreaCard({ imageUrl, videoUrl, title, Descrip
                             <Skeleton animation="wave" variant="rounded" height={30} width={'20%'} />
                         </React.Fragment>
                     ) : (
-                        <Box sx={{ width: '90%', mx: 'auto' }}>
-                            <ShareButtons title={title} description={Description}></ShareButtons>
-                        </Box>
+                        <>
+                        
+                         <Box sx={{ width: '90%', mx: 'auto' }}>
+                             <ShareButtons title={title} description={Description}></ShareButtons>
+                         </Box>
+                        </>
                     )}
-                </CardActions>
+                </CardActions> */}
             </Card>
 
         </>
