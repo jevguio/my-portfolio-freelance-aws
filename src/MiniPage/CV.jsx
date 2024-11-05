@@ -51,8 +51,8 @@ const ContactForm = ({ sectionRefs }) => {
   const achievements = [
     "Programmer of the Year – ITMAWD, April 2020 (STI)",
     "Best in Research – ITMAWD, 2020 (STI)",
-    "Tagisan ng Talino Codefest Champion (Local Level) – 2020",
-    "Tagisan ng Sining Champion (Local Level) – 2020",
+    "Tagisan ng Talino Codefest Champion (STI-Local Level) – 2020",
+    "Tagisan ng Sining Champion (STI-Local Level) – 2020",
     "Best in Mobile Application – 2019 (STI)",
     "STI National Codefest (2018) – 2nd Place nationally",
     "Successfully completed the Bandit wargame challenges",
