@@ -279,7 +279,7 @@ const ContactForm = ({ sectionRefs }) => {
                 June 2019 to May 2024
               </Typography>
             </Box>
-            <Typography variant="body2" mt={2} fontWeight="bold">
+            {/* <Typography variant="body2" mt={2} fontWeight="bold">
               Relevant Projects:
             </Typography>
 
@@ -293,7 +293,7 @@ const ContactForm = ({ sectionRefs }) => {
                   </Typography>
                 </li>
               ))}
-            </ul>
+            </ul> */}
             <Typography variant="body2" mt={2} fontWeight="bold" sx={{
               display: 'flex', // Use flex to align icon and text properly
               alignItems: 'center', // Center align items vertically 
