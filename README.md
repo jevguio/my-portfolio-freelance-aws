@@ -1,3 +1,4 @@
+![my-portfolio-freelance-aws](https://socialify.git.ci/jevguio/my-portfolio-freelance-aws/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark)
 # Jev Guio Portfolio React/Vite
 [Preview Page AWS](https://main.d2wl01qwsvaaxy.amplifyapp.com/) 
 
