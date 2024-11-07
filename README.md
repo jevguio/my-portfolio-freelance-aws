@@ -41,3 +41,6 @@ Welcome to my personal portfolio! This site is built with React.js and Vite to s
 ```bash
 git clone https://github.com/jevguio/my-portfolio-freelance-aws.git
 cd portfolio
+```
+### Disclaimer
+This project is designed for personal use and demonstration purposes only. All information and projects featured are my own work, created to highlight my skills and experience in full-stack development, 3D animation, and professional video editing.
