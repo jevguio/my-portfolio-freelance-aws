@@ -67,7 +67,7 @@ const ContactForm = ({ sectionRefs }) => {
     </>, 
     <>
     <Typography fontWeight={'bold'}>Freelance Developer </Typography>
-    <Typography> – website development, </Typography> 
+    <Typography> - website development, </Typography> 
     <Typography> - video editing</Typography> 
     </>,
   ];
