@@ -1,5 +1,5 @@
 # Jev Guio Portfolio React/Vite
-[Preview Page_AWS](https://main.d2wl01qwsvaaxy.amplifyapp.com/) 
+[Preview Page AWS](https://main.d2wl01qwsvaaxy.amplifyapp.com/) 
 
 ## Description
 
