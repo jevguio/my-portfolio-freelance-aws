@@ -337,7 +337,7 @@ const ContactForm = ({ sectionRefs }) => {
               {Skills.map((val, index) => (
                 <CustomizedRating
                   key={index}
-                  icon={<Box sx={{ border: 'solid #011222 1px', backgroundColor: '#011222', width: '4em', height: '.5em', m: 0.1, display: 'block' }}></Box>}
+                  icon={<Box sx={{ border: 'solid #011222 1px', backgroundColor: '#011222', width: '3em', height: '.5em', m: 0.1, display: 'block' }}></Box>}
                   emptyIcon={<Box sx={{ border: 'solid #011222 1px', width: '3em', height: '.5em', display: 'block', m: 0.1 }}></Box>}
                   label={val.label}
                   value={val.rate}
