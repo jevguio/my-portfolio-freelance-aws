@@ -1,4 +1,4 @@
-![my-portfolio-freelance-aws](https://socialify.git.ci/jevguio/my-portfolio-freelance-aws/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark)
+ ![my-portfolio-freelance-aws](https://socialify.git.ci/jevguio/my-portfolio-freelance-aws/image?description=1&descriptionEditable=Welcome%20to%20my%20personal%20portfolio!%20This%20site%20is%20built%20with%20React.js%20and%20Vite%20to%20showcase%20my%20skills.%20Here%2C%20you%E2%80%99ll%20find%20a%20collection%20of%20my%20work.&font=Raleway&forks=1&issues=1&language=1&logo=https%3A%2F%2Fgithub.com%2Fjevguio%2Fmy-portfolio-freelance-aws%2Fblob%2Fmain%2Fsrc%2FImages%2Flogo1.jpg%3Fraw%3Dtrue&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Auto)
 # Jev Guio Portfolio React/Vite
 [Preview Page AWS](https://main.d2wl01qwsvaaxy.amplifyapp.com/) 
 
